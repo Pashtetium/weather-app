@@ -1,23 +1,18 @@
-import React, { useState } from 'react'
-import { message, Spin } from 'antd'
-import { fetchCities } from 'api'
+import React from 'react'
+// import { message, Spin } from 'antd'
 
 import { CityCard } from 'components'
 
-function CityList() {
-  const [cities, setCities] = useState([])
-  const [loading, setLoading] = useState(false)
+function CityList({ data }:any) {
+  // const [cities, setCities] = useState([])
+  // const [loading, setLoading] = useState(false)
+  console.log(data)
 
-  const getCities = () => {
-    setLoading(true)
+  return data?.map((city: any) => {
+    console.log(city)
 
-    fetchCities()
-      .then((data: any) => {
-        setCities(data)
-      })
-      .catch((error: any) => { message.error(error.message) })
-      .finally(() => { setLoading(false) })
-  }
-
-  return loading ? <Spin spinning /> : cities.map((city: any) => <CityCard city={city} />)
+    return <CityCard key={city.id} data={city} />
+  })
 }
+
+export default CityList

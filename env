@@ -1,0 +1,5 @@
+REACT_APP_WEATHER_API_URL = "https://api.openweathermap.org/data/2.5"
+REACT_APP_WEATHER_API_KEY = "3f1f05635143e4bef1919eeb248ecff2"
+REACT_APP_GEO_API_URL = "https://wft-geo-db.p.rapidapi.com/v1/geo"
+REACT_APP_XRapidAPI_KEY = "06c20e9195mshec345b07630f4bcp18e57djsn84bb21aa9e3d"
+REACT_APP_XRapidAPI_HOST = "wft-geo-db.p.rapidapi.com"

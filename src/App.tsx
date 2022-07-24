@@ -1,7 +1,6 @@
 import React from 'react'
 
 import './App.css'
-import 'dotenv/config'
 import { MainPage } from 'components'
 import 'antd/dist/antd.css'
 
